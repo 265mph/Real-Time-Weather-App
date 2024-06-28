@@ -28,10 +28,10 @@
             </a>
             
             
-            <div class="search-view" data-search-view>
+            <div class="search-view active" data-search-view>
                 <div class="search-wrapper">
                     <input class="search-field" type="search" name="search" placeholder="Search City" autocomplete="off" data-search-field>
-                    <span class="material-symbols-rounded">search</span>
+                    <span class="material-symbols-rounded leading-icon">search</span>
 
                     <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
                         <span class="material-symbols-rounded">arrow_back</span>
@@ -66,6 +66,7 @@
             </div>
         </div>
     </header>
+
     
     <!-- ################################################## MAIN ################################################## -->
     <main>
@@ -281,8 +282,8 @@
                     </div>
                 </section>
 
-                <!-- ################################################## HOuRLT FORECAST ################################################## -->
-                <div class="section hourly-forecast" aria-label="hourly-forecast" data-hourly-forecast>
+                <!-- ################################################## HOURLT FORECAST ################################################## -->
+                <section class="section hourly-forecast" aria-label="hourly-forecast" data-hourly-forecast>
                     <h2 class="title-2">Today at</h2>
 
                     <div class="slider-container">
@@ -416,10 +417,32 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
+
+                <!-- ################################################## FOOTER ################################################## -->
+                <footer class="footer">
+                    <p class="body-3">
+                        Powered By <a href="" title="Free OpenWeather API" target="_blank" rel="noopener">
+                            <img src="assets/icons/openweather.png" width="150" height="30" loading="lazy" alt="OpenWeather">
+                        </a>
+                    </p>
+                </footer>
             </div>
+
+            <div class="loading" data-loading></div>
         </article>
     </main>
+
+
+    <!-- ################################################## ERROR SECTION ################################################## -->
+    <section class="error-content" data-error-content>
+        <h2 class="heading">404</h2>
+        <p class="body-1">Page Not Found</p>
+
+        <a href="#" class="btn-primary">
+            <span class="span">Home</span>
+        </a>
+    </section>
 
 </body>
 </html>
