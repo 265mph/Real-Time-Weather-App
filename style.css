@@ -429,7 +429,11 @@ article.container::before {
     gap: 8px;
 }
 
-.current-weather-card .weather-icon { margin-inline: auto; }
+.current-weather-card .weather-icon { 
+    margin-inline: auto;
+    margin-top: -4rem;
+    width: 9rem;
+ }
 
 .current-weather-card > .body-3 { text-transform: capitalize; }
 
@@ -752,10 +756,6 @@ article.container::before {
         top: 0;
     }
 
-    .container-right {
-        margin-right: -1.6rem;
-    }
-
     .section:not(:last-child) { margin-block: 20px; }
 
     .forecast-card .card-item:not(:last-child) { margin-block-end: 16px; }
@@ -893,8 +893,12 @@ article.container::before {
 
 
     article.container {
-        grid-template-columns: 360px minmax(0 1fr);
+        grid-template-columns: 360px minmax(0, 1fr);
         gap: 40px;
+    }
+
+    .container-right {
+        margin-right: -1.6rem;
     }
 
     .card.forecast-card { margin-bottom: -1.9rem;}
@@ -909,4 +913,13 @@ article.container::before {
 
     .highlight-card .material-symbols-rounded { font-size: 4.8rem; }
 
+}
+
+
+
+
+
+/* responsive for larger than 1400px */
+@media (min-width: 1400px) {
+    .highlight-list { grid-template-columns: repeat(4, 1fr);}    
 }
